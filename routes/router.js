@@ -57,6 +57,14 @@ const { JWT } = require('google-auth-library');
 
 const jwt_secret = "uuu"
 
+// home route
+
+
+router.get('/',async(req,res)=>{
+    res.send({"status":"running"})
+})
+
+
 // google-sheet data submit
 
 // router.get("/google-sheet-data",async(req,res) =>{
