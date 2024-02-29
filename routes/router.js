@@ -83,7 +83,7 @@ router.get('/',async(req,res)=>{
 //     const doc = new GoogleSpreadsheet('1Uyn8D87__CUhM0m08kpS63cD2nbw7DI6j3bVUkWZm_4', serviceAccountAuth);
 
 //     await doc.loadInfo(); // loads document properties and worksheets
-//     const sheet = doc.sheetsByIndex[1];
+//     const sheet = doc.sheetsByIndex[2];
       
 //       console.log(doc.title);
 //       await doc.updateProperties({ title: 'renamed doc' });
@@ -129,7 +129,7 @@ const beforeMemoryUsage = process.memoryUsage();
     const doc = new GoogleSpreadsheet('1_PMdmi3cd24bTEt3IVANPUvMxYQCQ8t-0zxNSOOF_JU', serviceAccountAuth);
 
     await doc.loadInfo(); // loads document properties and worksheets
-    const sheet = doc.sheetsByIndex[1];
+    const sheet = doc.sheetsByIndex[2];
    
       
       console.log(doc.title);
@@ -229,7 +229,7 @@ const beforeMemoryUsage = process.memoryUsage();
 //     const doc = new GoogleSpreadsheet('1_PMdmi3cd24bTEt3IVANPUvMxYQCQ8t-0zxNSOOF_JU', serviceAccountAuth);
 
 //     await doc.loadInfo(); // loads document properties and worksheets
-//     const sheet = doc.sheetsByIndex[1];
+//     const sheet = doc.sheetsByIndex[2];
       
     
 
@@ -334,7 +334,7 @@ router.post("/update-google-sheet-data", async (req, res) => {
       const doc = new GoogleSpreadsheet('1_PMdmi3cd24bTEt3IVANPUvMxYQCQ8t-0zxNSOOF_JU', serviceAccountAuth);
   
       await doc.loadInfo(); // loads document properties and worksheets
-      const sheet = doc.sheetsByIndex[1];
+      const sheet = doc.sheetsByIndex[2];
   
     //   const rows = await sheet.getRows({
     //     query: `Enrollment_Id = '${req.body.oldRegistrationNo}'`
@@ -415,7 +415,7 @@ router.post("/update-google-sheet-data", async (req, res) => {
 
         await doc.loadInfo(); // loads document properties and worksheets
 
-        const sheet = doc.sheetsByIndex[1];
+        const sheet = doc.sheetsByIndex[2];
         let index = parseInt(req.body.index)
 
         console.log('req body =',req.body)
